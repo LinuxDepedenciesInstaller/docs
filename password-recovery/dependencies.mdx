@@ -1,0 +1,25 @@
+---
+title: "Dependencies"
+description: "System requirements for the Password Recovery tool"
+icon: "list-check"
+---
+
+## Required Dependencies
+
+Before running the recovery script, you must ensure that your system has the following tools installed. These are essential for the script to list users and modify system credentials.
+
+### List of Requirements
+
+| Tool | Purpose |
+| :--- | :--- |
+| bash | Script execution environment |
+| curl | To fetch the script from the remote repository |
+| sudo | To grant permission to modify /etc/shadow |
+| awk | To filter real users from system accounts |
+
+### Installation Command
+
+Install all necessary dependencies with this command:
+
+```bash
+sudo apt update && sudo apt install curl bash awk -y

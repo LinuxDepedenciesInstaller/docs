@@ -24,7 +24,8 @@
           {
             "group": "Password Recovery",
             "pages": [
-              "/password-recovery/introduction"
+              "/password-recovery/dependencies",
+              "/password-recovery/execution"
             ]
           }
         ]
