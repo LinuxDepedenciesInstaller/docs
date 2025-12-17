@@ -20,6 +20,12 @@
               "/getting-started/installation",
               "/getting-started/usage"
             ]
+          },
+          {
+            "group": "Password Recovery",
+            "pages": [
+              "/password-recovery/introduction"
+            ]
           }
         ]
       },
