@@ -1,9 +1,9 @@
 ---
 title: "FAQ"
-description: "Frequently Asked Questions about LDI"
+description: "Frequently Asked Questions about LDI (Linux Dependencies Installer)"
 ---
 
-import { Accordion, AccordionItem, CopyButton, CodeBlock } from 'your-mdx-components'
+import { Accordion, AccordionItem, CodeBlock, CopyButton } from 'your-mdx-components'
 
 ## Frequently Asked Questions
 
@@ -26,7 +26,9 @@ import { Accordion, AccordionItem, CopyButton, CodeBlock } from 'your-mdx-compon
       <li>zip / unzip</li>
       <li>git</li>
     </ul>
+
     Example to check installation:
+
     <CodeBlock>
       curl --version
       git --version
@@ -40,6 +42,7 @@ import { Accordion, AccordionItem, CopyButton, CodeBlock } from 'your-mdx-compon
 
   <AccordionItem title="How to update LDI?">
     Pull the latest version from GitHub:
+
     <CodeBlock>
       git pull origin main
     </CodeBlock>

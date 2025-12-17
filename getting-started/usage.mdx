@@ -3,6 +3,8 @@ title: "Usage"
 description: "How to use LDI (Linux Dependencies Installer) after installation"
 ---
 
+import { Card, Columns, CodeBlock, CopyButton } from 'your-mdx-components'
+
 ## Using LDI
 
 Once installed, LDI helps you quickly set up essential Linux dependencies without requiring root or sudo.
@@ -14,84 +16,89 @@ Once installed, LDI helps you quickly set up essential Linux dependencies withou
   horizontal
 >
   Execute <code>./ldi.sh</code> from the LDI directory to start installing packages automatically.
+
+  <CodeBlock>
+    ./ldi.sh
+  </CodeBlock>
+
+  <CopyButton content="./ldi.sh" />
 </Card>
 
 ## Verify Installation
-
-Ensure all essential tools are installed correctly.
 
 <Columns cols={2}>
   <Card
     title="Check curl"
     icon="check-circle"
-    href="/faq/faq"
+    href="/getting-started/faq"
   >
-    <code>curl --version</code> to verify curl is installed.
+    <CodeBlock>
+      curl --version
+    </CodeBlock>
+    <CopyButton content="curl --version" />
   </Card>
+
   <Card
     title="Check wget"
     icon="check-circle"
-    href="/faq/faq"
+    href="/getting-started/faq"
   >
-    <code>wget --version</code> to verify wget is installed.
+    <CodeBlock>
+      wget --version
+    </CodeBlock>
+    <CopyButton content="wget --version" />
   </Card>
+
   <Card
     title="Check git"
     icon="check-circle"
-    href="/faq/faq"
+    href="/getting-started/faq"
   >
-    <code>git --version</code> to verify git is installed.
+    <CodeBlock>
+      git --version
+    </CodeBlock>
+    <CopyButton content="git --version" />
   </Card>
+
   <Card
     title="Check tar/zip"
     icon="check-circle"
-    href="/faq/faq"
+    href="/getting-started/faq"
   >
-    <code>tar --version</code> and <code>zip -v</code> / <code>unzip -v</code> to verify archive tools.
+    <CodeBlock>
+      tar --version
+      zip -v
+      unzip -v
+    </CodeBlock>
+    <CopyButton content="tar --version\nzip -v\nunzip -v" />
   </Card>
 </Columns>
 
 ## Best Practices
 
-Use LDI safely and efficiently in your environment.
-
 <Columns cols={2}>
   <Card
     title="Run as a normal user"
     icon="shield"
-    href="/faq/faq"
   >
     Do not use sudo or root—LDI installs everything safely.
   </Card>
   <Card
     title="Repeatable setups"
     icon="repeat"
-    href="/getting-started/installation"
   >
     You can rerun LDI anytime; already installed packages will be skipped.
   </Card>
   <Card
     title="Integrate with scripts"
     icon="code"
-    href="/getting-started/usage"
   >
     Include LDI in automation or CI/CD pipelines for consistent setups.
   </Card>
   <Card
     title="Stay updated"
     icon="sync"
-    href="/faq/faq"
   >
     Pull the latest version from GitHub to keep your installer up to date.
   </Card>
 </Columns>
-
-## Learn More
-
-<Card
-  title="FAQ & Troubleshooting"
-  icon="question-circle"
-  href="/faq/faq"
->
-  Check common questions and issues when using LDI.
-</Card>
