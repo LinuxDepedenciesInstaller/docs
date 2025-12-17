@@ -1,57 +1,67 @@
 ---
 title: "FAQ"
 description: "Frequently Asked Questions about LDI (Linux Dependencies Installer)"
+icon: "question"
 ---
-
-import { Accordion, AccordionItem, CodeBlock, CopyButton } from 'your-mdx-components'
 
 ## Frequently Asked Questions
 
-<Accordion>
+Find quick answers to the most common questions regarding the use and operation of LDI.
 
-  <AccordionItem title="Do I need root or sudo?">
-    No. LDI installs packages as a normal user. It is safe to run without root privileges.
-  </AccordionItem>
+<AccordionGroup>
+  <Accordion title="Do I need root or sudo privileges?" icon="shield-check">
+    **No.** One of the main advantages of LDI is that it installs dependencies as a **normal user**. It is designed to run safely without administrator privileges, protecting the integrity of your system.
+  </Accordion>
 
-  <AccordionItem title="Can I run LDI multiple times?">
-    Yes, LDI is repeatable. Already installed packages will be skipped automatically.
-  </AccordionItem>
+  <Accordion title="Can I run LDI multiple times?" icon="repeat">
+    **Yes.** LDI is fully **idempotent** (repeatable). If you run the script multiple times, it will automatically detect packages that are already present and skip their installation to save time.
+  </Accordion>
 
-  <AccordionItem title="Which packages are installed?">
-    LDI installs the following essential tools:
-    <ul>
-      <li>curl</li>
-      <li>wget</li>
-      <li>tar</li>
-      <li>zip / unzip</li>
-      <li>git</li>
-    </ul>
+  <Accordion title="Which exact packages are installed?" icon="box-open">
+    LDI configures an essential base environment including the following tools:
+    
+    * `curl` & `wget` (Data transfer)
+    * `tar` (Archive extraction)
+    * `zip` / `unzip` (Compression)
+    * `git` (Version control)
 
-    Example to check installation:
+    You can verify their presence after installation using these commands:
+    ```bash
+    curl --version
+    git --version
+    ```
+  </Accordion>
 
-    <CodeBlock>
-      curl --version
-      git --version
-    </CodeBlock>
-    <CopyButton content="curl --version\ngit --version" />
-  </AccordionItem>
+  <Accordion title="Which Linux distributions are supported?" icon="linux">
+    Currently, LDI is optimized for **Debian-based** distributions, including:
+    * Ubuntu (all LTS versions)
+    * Debian
+    * Linux Mint
+    * Kali Linux
+    
+    *Support for other architectures (RHEL/Arch) is currently under consideration.*
+  </Accordion>
 
-  <AccordionItem title="What distributions are supported?">
-    LDI supports Debian-based Linux distributions, including Ubuntu, Debian, and derivatives.
-  </AccordionItem>
+  <Accordion title="How do I update LDI?" icon="arrow-up-from-bracket">
+    To benefit from the latest improvements, navigate to your LDI folder and pull the latest version from GitHub:
 
-  <AccordionItem title="How to update LDI?">
-    Pull the latest version from GitHub:
+    ```bash
+    git pull origin main
+    ```
+  </Accordion>
 
-    <CodeBlock>
-      git pull origin main
-    </CodeBlock>
-    <CopyButton content="git pull origin main" />
-  </AccordionItem>
+  <Accordion title="The script failed, what should I do?" icon="circle-exclamation">
+    If an installation fails, first check your internet connection. If the problem persists, you can check the error logs or open a ticket on our official repository.
+  </Accordion>
 
-  <AccordionItem title="Where can I get help?">
-    Check the full documentation or open an issue on the GitHub repository:
-    <a href="https://github.com/LinuxDepedenciesInstaller/LDI/issues" target="_blank">GitHub Issues</a>
-  </AccordionItem>
+  <Accordion title="Where can I get additional help?" icon="github">
+    If you cannot find your answer here, you can:
+    1. Consult the [Full Documentation](/introduction)
+    2. Open an issue on [GitHub Issues](https://github.com/LinuxDepedenciesInstaller/LDI/issues) to report a bug or suggest a feature.
+  </Accordion>
+</AccordionGroup>
 
-</Accordion>
+---
+
+### Can't find what you're looking for?
+Feel free to contact the community or contribute to the project to help us improve LDI.
