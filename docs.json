@@ -77,9 +77,6 @@
   "footer": {
     "socials": {
       "github": "https://github.com/LinuxDepedenciesInstaller"
-    },
-    "branding": {
-      "enabled": false
     }
   }
 }
