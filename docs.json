@@ -78,6 +78,8 @@
     "socials": {
       "github": "https://github.com/LinuxDepedenciesInstaller"
     },
-    "branding": "hide"
+    "branding": {
+      "enabled": false
+    }
   }
 }
