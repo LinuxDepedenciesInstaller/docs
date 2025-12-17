@@ -16,9 +16,20 @@
           {
             "group": "Getting started",
             "pages": [
-              "/getting-started/intruction",
+              "/getting-started/introduction",
               "/getting-started/usage",
               "/getting-started/installation"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "FAQ",
+        "groups": [
+          {
+            "group": "FAQ",
+            "pages": [
+              "/faq/faq"
             ]
           }
         ]
