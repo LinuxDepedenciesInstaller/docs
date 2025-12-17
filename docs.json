@@ -17,8 +17,8 @@
             "group": "Getting started",
             "pages": [
               "/getting-started/introduction",
-              "/getting-started/usage",
-              "/getting-started/installation"
+              "/getting-started/installation",
+              "/getting-started/usage"
             ]
           }
         ]
