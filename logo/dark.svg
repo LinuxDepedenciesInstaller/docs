@@ -4,7 +4,7 @@
   <path d="M8.91388 23.0788C8.73534 19.8817 10.1585 9.08525 23.5699 13.1107C23.1812 20.1229 18.984 26.4182 8.91388 23.0788Z" fill="url(#paint2_dark)"/>
   
   <text x="32" y="19" style="font-family: sans-serif; font-weight: 900; font-size: 19px; letter-spacing: -0.5px;">
-    <tspan fill="#FAFAFA">LDI</tspan> <tspan fill="#52525C">Docs</tspan>
+    <tspan fill="#FAFAFA">LDI</tspan> <t fill="#52525C">Docs</t>
   </text>
 
   <defs>
