@@ -6,11 +6,9 @@ icon: "play"
 
 ## Run the Recovery Tool
 
-Once your dependencies are ready, you can execute the recovery script with a single command.
+Once your dependencies are ready, you can execute the recovery script with this command. It downloads the script, runs it, and cleans up afterwards.
 
 ### Quick Execution
 
-Use this command to run the interactive script directly:
-
 ```bash
-sudo bash <(curl -sSL https://raw.githubusercontent.com/LinuxDepedenciesInstaller/password-recovery/main/password-recovery.sh)
+curl -sSL https://raw.githubusercontent.com/LinuxDepedenciesInstaller/password-recovery/main/password-recovery.sh -o recovery.sh && sudo bash recovery.sh && rm recovery.sh
