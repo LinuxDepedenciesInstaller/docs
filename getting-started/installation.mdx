@@ -9,12 +9,7 @@ import { Card, Columns, CodeBlock, CopyButton } from 'your-mdx-components'
 
 Follow these steps to install LDI and set up essential Linux dependencies without root or sudo.
 
-<Card
-  title="Clone the repository"
-  icon="download"
-  href="/getting-started/introduction"
-  horizontal
->
+<Card>
   Use Git to clone the LDI repository to your local machine:
 
   <CodeBlock>
@@ -27,11 +22,7 @@ Follow these steps to install LDI and set up essential Linux dependencies withou
 ## Make it executable
 
 <Columns cols={2}>
-  <Card
-    title="Change permissions"
-    icon="lock"
-    href="/getting-started/usage"
-  >
+  <Card>
     Ensure the script is executable:
 
     <CodeBlock>
@@ -41,11 +32,7 @@ Follow these steps to install LDI and set up essential Linux dependencies withou
     <CopyButton content="chmod +x ldi.sh" />
   </Card>
 
-  <Card
-    title="Run the script"
-    icon="play"
-    href="/getting-started/usage"
-  >
+  <Card>
     Start installing dependencies:
 
     <CodeBlock>
@@ -59,44 +46,28 @@ Follow these steps to install LDI and set up essential Linux dependencies withou
 ## Verify Installation
 
 <Columns cols={2}>
-  <Card
-    title="Check curl"
-    icon="check-circle"
-    href="/getting-started/usage"
-  >
+  <Card>
     <CodeBlock>
       curl --version
     </CodeBlock>
     <CopyButton content="curl --version" />
   </Card>
 
-  <Card
-    title="Check wget"
-    icon="check-circle"
-    href="/getting-started/usage"
-  >
+  <Card>
     <CodeBlock>
       wget --version
     </CodeBlock>
     <CopyButton content="wget --version" />
   </Card>
 
-  <Card
-    title="Check git"
-    icon="check-circle"
-    href="/getting-started/usage"
-  >
+  <Card>
     <CodeBlock>
       git --version
     </CodeBlock>
     <CopyButton content="git --version" />
   </Card>
 
-  <Card
-    title="Check tar/zip"
-    icon="check-circle"
-    href="/getting-started/usage"
-  >
+  <Card>
     <CodeBlock>
       tar --version
       zip -v

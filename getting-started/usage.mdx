@@ -9,12 +9,7 @@ import { Card, Columns, CodeBlock, CopyButton } from 'your-mdx-components'
 
 Once installed, LDI helps you quickly set up essential Linux dependencies without requiring root or sudo.
 
-<Card
-  title="Run the script"
-  icon="play"
-  href="/getting-started/installation"
-  horizontal
->
+<Card>
   Execute <code>./ldi.sh</code> from the LDI directory to start installing packages automatically.
 
   <CodeBlock>
@@ -27,44 +22,28 @@ Once installed, LDI helps you quickly set up essential Linux dependencies withou
 ## Verify Installation
 
 <Columns cols={2}>
-  <Card
-    title="Check curl"
-    icon="check-circle"
-    href="/getting-started/faq"
-  >
+  <Card>
     <CodeBlock>
       curl --version
     </CodeBlock>
     <CopyButton content="curl --version" />
   </Card>
 
-  <Card
-    title="Check wget"
-    icon="check-circle"
-    href="/getting-started/faq"
-  >
+  <Card>
     <CodeBlock>
       wget --version
     </CodeBlock>
     <CopyButton content="wget --version" />
   </Card>
 
-  <Card
-    title="Check git"
-    icon="check-circle"
-    href="/getting-started/faq"
-  >
+  <Card>
     <CodeBlock>
       git --version
     </CodeBlock>
     <CopyButton content="git --version" />
   </Card>
 
-  <Card
-    title="Check tar/zip"
-    icon="check-circle"
-    href="/getting-started/faq"
-  >
+  <Card>
     <CodeBlock>
       tar --version
       zip -v
