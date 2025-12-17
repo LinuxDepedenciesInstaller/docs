@@ -3,6 +3,8 @@ title: "Installation"
 description: "How to install LDI (Linux Dependencies Installer) on your system"
 ---
 
+import { CopyButton, CodeBlock } from 'your-mdx-components' 
+
 ## Installing LDI
 
 Follow these steps to install LDI and set up essential Linux dependencies without root or sudo.
@@ -14,7 +16,12 @@ Follow these steps to install LDI and set up essential Linux dependencies withou
   horizontal
 >
   Use Git to clone the LDI repository to your local machine:
-  <pre><code>git clone https://github.com/LinuxDepedenciesInstaller/LDI.git</code></pre>
+
+  <CodeBlock>
+    git clone https://github.com/LinuxDepedenciesInstaller/LDI.git
+  </CodeBlock>
+
+  <CopyButton content="git clone https://github.com/LinuxDepedenciesInstaller/LDI.git" />
 </Card>
 
 ## Make it executable
@@ -26,15 +33,26 @@ Follow these steps to install LDI and set up essential Linux dependencies withou
     href="/getting-started/usage"
   >
     Ensure the script is executable:
-    <pre><code>chmod +x ldi.sh</code></pre>
+
+    <CodeBlock>
+      chmod +x ldi.sh
+    </CodeBlock>
+
+    <CopyButton content="chmod +x ldi.sh" />
   </Card>
+
   <Card
     title="Run the script"
     icon="play"
     href="/getting-started/usage"
   >
     Start installing dependencies:
-    <pre><code>./ldi.sh</code></pre>
+
+    <CodeBlock>
+      ./ldi.sh
+    </CodeBlock>
+
+    <CopyButton content="./ldi.sh" />
   </Card>
 </Columns>
 
@@ -48,28 +66,45 @@ After running LDI, confirm that all required packages are installed.
     icon="check-circle"
     href="/getting-started/usage"
   >
-    <code>curl --version</code>
+    <CodeBlock>
+      curl --version
+    </CodeBlock>
+    <CopyButton content="curl --version" />
   </Card>
+
   <Card
     title="Check wget"
     icon="check-circle"
     href="/getting-started/usage"
   >
-    <code>wget --version</code>
+    <CodeBlock>
+      wget --version
+    </CodeBlock>
+    <CopyButton content="wget --version" />
   </Card>
+
   <Card
     title="Check git"
     icon="check-circle"
     href="/getting-started/usage"
   >
-    <code>git --version</code>
+    <CodeBlock>
+      git --version
+    </CodeBlock>
+    <CopyButton content="git --version" />
   </Card>
+
   <Card
     title="Check tar/zip"
     icon="check-circle"
     href="/getting-started/usage"
   >
-    <code>tar --version</code>, <code>zip -v</code>, <code>unzip -v</code>
+    <CodeBlock>
+      tar --version
+      zip -v
+      unzip -v
+    </CodeBlock>
+    <CopyButton content="tar --version\nzip -v\nunzip -v" />
   </Card>
 </Columns>
 
