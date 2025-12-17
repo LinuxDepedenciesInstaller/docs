@@ -1,0 +1,92 @@
+---
+title: "Installation"
+description: "How to install LDI (Linux Dependencies Installer) on your system"
+---
+
+## Installing LDI
+
+Follow these steps to install LDI and set up essential Linux dependencies without root or sudo.
+
+<Card
+  title="Clone the repository"
+  icon="download"
+  href="/getting-started/introduction"
+  horizontal
+>
+  Use Git to clone the LDI repository to your local machine:
+  <pre><code>git clone https://github.com/LinuxDepedenciesInstaller/LDI.git</code></pre>
+</Card>
+
+## Make it executable
+
+<Columns cols={2}>
+  <Card
+    title="Change permissions"
+    icon="lock"
+    href="/getting-started/usage"
+  >
+    Ensure the script is executable:
+    <pre><code>chmod +x ldi.sh</code></pre>
+  </Card>
+  <Card
+    title="Run the script"
+    icon="play"
+    href="/getting-started/usage"
+  >
+    Start installing dependencies:
+    <pre><code>./ldi.sh</code></pre>
+  </Card>
+</Columns>
+
+## Verify Installation
+
+After running LDI, confirm that all required packages are installed.
+
+<Columns cols={2}>
+  <Card
+    title="Check curl"
+    icon="check-circle"
+    href="/getting-started/usage"
+  >
+    <code>curl --version</code>
+  </Card>
+  <Card
+    title="Check wget"
+    icon="check-circle"
+    href="/getting-started/usage"
+  >
+    <code>wget --version</code>
+  </Card>
+  <Card
+    title="Check git"
+    icon="check-circle"
+    href="/getting-started/usage"
+  >
+    <code>git --version</code>
+  </Card>
+  <Card
+    title="Check tar/zip"
+    icon="check-circle"
+    href="/getting-started/usage"
+  >
+    <code>tar --version</code>, <code>zip -v</code>, <code>unzip -v</code>
+  </Card>
+</Columns>
+
+## Notes
+
+<Card
+  title="Safe installation"
+  icon="shield"
+  href="/getting-started/faq"
+>
+  LDI does not require root or sudo. You can run it as a normal user safely.
+</Card>
+
+<Card
+  title="Repeatable"
+  icon="repeat"
+  href="/getting-started/usage"
+>
+  You can rerun LDI anytime. Already installed packages will be skipped automatically.
+</Card>

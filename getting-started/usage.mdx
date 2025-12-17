@@ -1,0 +1,97 @@
+---
+title: "Usage"
+description: "How to use LDI (Linux Dependencies Installer) after installation"
+---
+
+## Using LDI
+
+Once installed, LDI helps you quickly set up essential Linux dependencies without requiring root or sudo.
+
+<Card
+  title="Run the script"
+  icon="play"
+  href="/getting-started/installation"
+  horizontal
+>
+  Execute <code>./ldi.sh</code> from the LDI directory to start installing packages automatically.
+</Card>
+
+## Verify Installation
+
+Ensure all essential tools are installed correctly.
+
+<Columns cols={2}>
+  <Card
+    title="Check curl"
+    icon="check-circle"
+    href="/getting-started/faq"
+  >
+    <code>curl --version</code> to verify curl is installed.
+  </Card>
+  <Card
+    title="Check wget"
+    icon="check-circle"
+    href="/getting-started/faq"
+  >
+    <code>wget --version</code> to verify wget is installed.
+  </Card>
+  <Card
+    title="Check git"
+    icon="check-circle"
+    href="/getting-started/faq"
+  >
+    <code>git --version</code> to verify git is installed.
+  </Card>
+  <Card
+    title="Check tar/zip"
+    icon="check-circle"
+    href="/getting-started/faq"
+  >
+    <code>tar --version</code> and <code>zip -v</code> / <code>unzip -v</code> to verify archive tools.
+  </Card>
+</Columns>
+
+## Best Practices
+
+Use LDI safely and efficiently in your environment.
+
+<Columns cols={2}>
+  <Card
+    title="Run as a normal user"
+    icon="shield"
+    href="/getting-started/faq"
+  >
+    Do not use sudo or root—LDI installs everything safely.
+  </Card>
+  <Card
+    title="Repeatable setups"
+    icon="repeat"
+    href="/getting-started/installation"
+  >
+    You can rerun LDI anytime; already installed packages will be skipped.
+  </Card>
+  <Card
+    title="Integrate with scripts"
+    icon="code"
+    href="/getting-started/usage"
+  >
+    Include LDI in automation or CI/CD pipelines for consistent setups.
+  </Card>
+  <Card
+    title="Stay updated"
+    icon="sync"
+    href="/getting-started/faq"
+  >
+    Pull the latest version from GitHub to keep your installer up to date.
+  </Card>
+</Columns>
+
+## Learn More
+
+<Card
+  title="FAQ & Troubleshooting"
+  icon="question-circle"
+  href="/getting-started/faq"
+>
+  Check common questions and issues when using LDI.
+</Card>
